@@ -1,0 +1,15 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+venv/
+.venv/
+env/
+
+# Database e file di dati elaborati locali
+data/processed/*.duckdb
+data/processed/*.db
+
+# IDE e configurazioni di sistema
+.vscode/
+.DS_Store

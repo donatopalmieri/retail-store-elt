@@ -1,0 +1,10 @@
+id_transazione,id_cliente,prodotto,categoria,quantita,prezzo_unitario,data
+101,1,Laptop,Elettronica,,850.0,2026-10-01
+102,2,Mouse,Accessori,2,25.0,2026-10-01
+103,3,Tastiera,Accessori,1,45.0,2026-10-02
+104,4,Monitor,,1,200.0,2026-10-03
+105,1,Cuffie,Accessori,3,50.0,2026-10-03
+106,5,Laptop,,1,850.0,2026-10-04
+107,6,Mouse,Accessori,2,25.0,2026-10-04
+108,3,Monitor,Elettronica,1,200.0,2026-10-05
+102,2,Mouse,Accessori,2,25.0,2026-10-01
