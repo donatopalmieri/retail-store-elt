@@ -1,0 +1,11 @@
+id_categoria,nome_categoria,descrizione,id_categoria_padre
+1,Elettronica,Dispositivi elettronici e accessori tech,
+2,Informatica,"Computer, periferiche e componenti",1.0
+3,Audio & Video,"Cuffie, altoparlanti e sistemi audio",1.0
+4,Casa & Cucina,Articoli per la casa e piccoli elettrodomestici,
+5,Sport & Tempo Libero,Attrezzatura ed equipaggiamento sportivo,
+6,Accessori & Modai,"Zaini, borse e accessori per il viaggio",
+7,Fitness,Articoli per allenamento indoor e yoga,5.0
+8,Illuminazione,Lampade LED e soluzioni di luce per interni,4.0
+9,Smart Home,Domotica e dispositivi intelligenti,1.0
+10,Ufficio & Cartoleria,Accessori per la scrivania e organizzazione,4.0

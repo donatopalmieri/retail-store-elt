@@ -1,0 +1,13 @@
+id_reso,id_dettaglio_ordine,data_reso,quantita_resa,motivo_reso,stato_reso,importo_rimborso
+1,32,2026-05-12,1,Ripensamento cliente,Rifiutato,35.72
+2,72,2026-06-12,1,Taglia/Dimensione errata,Rimborsato,74.53
+3,75,2026-02-26,1,Prodotto difettoso,Approvato,32.3
+4,49,2026-07-04,1,Prodotto non conforme alle immagini,Rimborsato,119.36
+5,46,2026-07-11,1,Prodotto difettoso,Rimborsato,52.11
+6,4,2026-09-18,1,Prodotto difettoso,Approvato,26.62
+7,14,2026-04-29,1,Taglia/Dimensione errata,Rimborsato,61.38
+8,31,2026-07-15,1,Prodotto difettoso,Rimborsato,39.06
+9,28,2026-08-24,1,Spedizione in ritardo,In Valutazione,54.08
+10,23,2026-03-19,1,Prodotto difettoso,Approvato,43.66
+11,63,2026-05-25,1,Ripensamento cliente,Rifiutato,111.58
+12,80,2026-09-24,1,Spedizione in ritardo,Rimborsato,62.35

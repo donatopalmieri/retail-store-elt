@@ -1,3 +1,5 @@
+# Tale processo è stato sostituito da dbt, non cancello il file per tenerne traccia
+
 import duckdb
 from src.config import DB_PATH
 
@@ -12,7 +14,7 @@ def run_dwh_transformations():
         SELECT DISTINCT
             ROW_NUMBER() OVER () AS id_cliente_surrogato,
             id_cliente, -- ID originale dal gestionale/file
-            nomecliente,
+            nome as nomecliente,
             citta,
             segmento
         FROM stg_clienti

@@ -1,0 +1,11 @@
+id_prodotto,nome_prodotto,categoria,prezzo,giacenza
+1,Smartphone X10,Elettronica,499.99,425
+2,Cuffie Wireless Pro,Elettronica,89.5,368
+3,Zaino da Viaggio,Accessori,45.0,236
+4,Borraccia Termica 500ml,Casa,19.99,325
+5,Tappetino Yoga,Sport,29.9,52
+6,Smartwatch Sport,Elettronica,129.0,217
+7,Mouse Ergonomico,Elettronica,35.5,215
+8,Tastiera Meccanica,Elettronica,79.9,325
+9,Lampada da Scrivania LED,Casa,25.0,259
+10,Cuscino Lombare,Casa,22.5,290

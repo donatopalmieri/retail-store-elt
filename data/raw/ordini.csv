@@ -1,0 +1,41 @@
+id_ordine,id_cliente,data_ordine,stato_ordine,metodo_pagamento,totale_ordine
+1,19,2026-04-10 16:59:00,Consegnato,Carta di Credito,102.72
+2,11,2026-08-13 09:16:00,Consegnato,Carta di Credito,533.54
+3,15,2026-06-05 11:07:00,Spedito,Bonifico,132.74
+4,7,2026-10-01 09:22:00,Spedito,Bonifico,549.89
+5,13,2026-07-05 18:36:00,Consegnato,Satispay,967.48
+6,23,2026-08-15 09:43:00,Spedito,Satispay,161.48
+7,3,2026-03-18 12:21:00,Consegnato,Carta di Credito,679.78
+8,15,2026-04-15 14:07:00,Consegnato,Bonifico,298.4
+9,21,2026-07-22 17:29:00,Spedito,Carta di Credito,380.4
+10,11,2026-01-10 10:18:00,Consegnato,Bonifico,585.38
+11,1,2026-08-18 18:12:00,Spedito,Bonifico,281.3
+12,22,2026-06-04 19:16:00,Consegnato,Satispay,106.81
+13,11,2026-08-13 15:42:00,Consegnato,PayPal,239.7
+14,1,2026-07-30 15:42:00,Consegnato,PayPal,1796.5
+15,24,2026-02-07 10:30:00,Spedito,Satispay,29.9
+16,12,2026-04-21 18:50:00,Consegnato,PayPal,189.0
+17,15,2026-03-12 08:12:00,In Lavorazione,PayPal,67.5
+18,11,2026-09-18 10:36:00,Spedito,PayPal,85.02
+19,20,2026-02-16 12:25:00,Spedito,Carta di Credito,80.73
+20,2,2026-02-19 12:18:00,Consegnato,Satispay,887.04
+21,20,2026-03-26 15:28:00,Consegnato,PayPal,793.97
+22,25,2026-07-12 10:16:00,Consegnato,Bonifico,1635.35
+23,28,2026-01-23 14:02:00,Consegnato,PayPal,33.73
+24,13,2026-02-23 19:11:00,Consegnato,Satispay,361.2
+25,10,2026-04-29 14:56:00,In Lavorazione,Carta di Credito,25.0
+26,25,2026-09-08 12:29:00,Consegnato,Bonifico,288.8
+27,13,2026-02-21 17:48:00,Consegnato,Carta di Credito,499.26
+28,25,2026-03-30 19:03:00,Consegnato,Carta di Credito,90.0
+29,17,2026-03-06 16:46:00,Consegnato,PayPal,19.99
+30,18,2026-04-07 15:07:00,Consegnato,Satispay,317.9
+31,19,2026-05-09 10:42:00,Consegnato,Bonifico,90.0
+32,30,2026-03-23 19:55:00,In Lavorazione,PayPal,472.5
+33,11,2026-04-26 17:19:00,Consegnato,Bonifico,1123.46
+34,30,2026-04-18 10:06:00,Consegnato,Satispay,26.91
+35,5,2026-09-14 17:47:00,Consegnato,Bonifico,40.5
+36,28,2026-06-07 20:00:00,Consegnato,Carta di Credito,453.79
+37,16,2026-08-27 20:57:00,Consegnato,PayPal,678.31
+38,16,2026-01-21 20:04:00,Consegnato,Bonifico,474.99
+39,13,2026-06-03 11:17:00,Spedito,PayPal,180.0
+40,4,2026-03-15 13:44:00,Consegnato,PayPal,429.32

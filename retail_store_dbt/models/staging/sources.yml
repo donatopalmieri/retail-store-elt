@@ -1,0 +1,8 @@
+version: 2
+
+sources:
+  - name: staging_raw
+    schema: main  # o lo schema in cui il tuo script Python salva le tabelle di staging
+    tables:
+      - name: stg_clienti  # nome esatto della tabella di staging creata da Python
+      - name: stg_vendite  # nome esatto della tabella di staging creata da Python

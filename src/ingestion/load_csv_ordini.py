@@ -2,11 +2,11 @@ import duckdb
 import pandas as pd
 from src.config import RAW_DIR, DB_PATH
 
-def run_ingestion_vendite():
+def run_ingestion_ordini():
     print("Avvio processo di ingestion...")
     
     # Esempio: supponiamo di avere un file chiamato 'vendite.csv' in data/raw/
-    csv_file = RAW_DIR / "vendite.csv"
+    csv_file = RAW_DIR / "ordini.csv"
     
     # Controllo di sicurezza se il file esiste
     if not csv_file.exists():
@@ -25,7 +25,7 @@ def run_ingestion_vendite():
     con = duckdb.connect(str(DB_PATH))
     
     # 4. Creazione della tabella di Staging in DuckDB partendo dal DataFrame di Pandas
-    table_name = "stg_vendite"
+    table_name = "stg_ordini"
     con.execute(f"CREATE OR REPLACE TABLE {table_name} AS SELECT * FROM df")
     
     print(f"Tabella '{table_name}' creata con successo in DuckDB!")
@@ -38,4 +38,4 @@ def run_ingestion_vendite():
     con.close()
 
 if __name__ == "__main__":
-    run_ingestion_vendite()
+    run_ingestion_ordini()
