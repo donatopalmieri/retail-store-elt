@@ -2,7 +2,22 @@ version: 2
 
 sources:
   - name: staging_raw
-    schema: main  # o lo schema in cui il tuo script Python salva le tabelle di staging
+    description: "Tabelle di staging caricate in DuckDB tramite lo script Python ETL."
+    database: warehouse.duckdb  # Nome del tuo file DuckDB
+    schema: main          # Schema di default di DuckDB
+    
     tables:
-      - name: stg_clienti  # nome esatto della tabella di staging creata da Python
-      - name: stg_vendite  # nome esatto della tabella di staging creata da Python
+      - name: raw_clienti
+        description: "Anagrafica dei clienti."
+      - name: raw_categorie
+        description: "Categorie dei prodotti."
+      - name: raw_prodotti
+        description: "Catalogo dei prodotti in vendita."
+      - name: raw_ordini
+        description: "Testata degli ordini effettuati dai clienti."
+      - name: raw_dettaglio_ordini
+        description: "Righe di dettaglio dei singoli ordini."
+      - name: raw_eventi_web
+        description: "Tracciamento degli eventi web (clickstream)."
+      - name: raw_resi
+        description: "Gestione dei resi e dei rimborsi."
