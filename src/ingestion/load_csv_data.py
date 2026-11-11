@@ -25,7 +25,7 @@ def run_ingestion_data():
     # 3. Iterazione su tutte le tabelle
     for nome_chiave, nome_file in tabelle_da_caricare.items():
         csv_file = RAW_DIR / nome_file
-        table_name = f"stg_{nome_chiave}"
+        table_name = f"raw_{nome_chiave}"
         
         # Controllo di sicurezza se il file esiste
         if not csv_file.exists():
