@@ -1,0 +1,29 @@
+version: 2
+
+models:
+  - name: stg_clienti
+    description: "Vista di staging per i clienti e-commerce."
+    columns:
+      - name: id_cliente
+        description: "Chiave primaria del cliente."
+        tests:
+          - unique
+          - not_null
+      - name: email
+        tests:
+          - not_null
+
+  - name: stg_ordini
+    description: "Vista di staging per gli ordini."
+    columns:
+      - name: id_ordine
+        tests:
+          - unique
+          - not_null
+      - name: id_cliente
+        tests:
+          - not_null
+          - relationships:
+              arguments:
+                to: ref('stg_clienti')
+                field: id_cliente
