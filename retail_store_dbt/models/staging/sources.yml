@@ -3,7 +3,7 @@ version: 2
 sources:
   - name: staging_raw
     description: "Tabelle di staging caricate in DuckDB tramite lo script Python ETL."
-    database: warehouse.duckdb  # Nome del tuo file DuckDB
+    database: warehouse  # Nome del tuo file DuckDB, non va inserito .duckdb
     schema: main          # Schema di default di DuckDB
     
     tables:
