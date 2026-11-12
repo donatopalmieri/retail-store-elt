@@ -10,20 +10,61 @@ models:
           - unique
           - not_null
       - name: email
+        description: "Informazioni relative alla mail del cliente"
         tests:
           - not_null
+
+      - name: Nome
+        description: "Nome del cliente"
+
+      - name: Cognome
+        description: "Cognome del cliente"
+
+      - name: citta
+        description: "Città del cliente"
+
+      - name: data_registrazione
+        description: "Data registrazione del cliente"
 
   - name: stg_ordini
     description: "Vista di staging per gli ordini."
     columns:
       - name: id_ordine
+        description: "identificativo dell'ordine"
         tests:
           - unique
           - not_null
       - name: id_cliente
+        description: "riferimento all'anagrafica clienti"
         tests:
           - not_null
           - relationships:
               arguments:
                 to: ref('stg_clienti')
                 field: id_cliente
+      - name: data_ordine
+        description: "timestamp dell'acquisto"
+
+      - name: stato_ordine
+        description: "Consegnato, Spedito, In Lavorazione, Annullato"
+
+      - name: metodo_pagamento
+        description: "Carta di Credito, PayPal, Bonifico, Satispay"         
+
+      - name: totale_ordine
+        description: "somma dei subtotali dei singoli prodotti nell'ordine" 
+
+  - name: stg_categorie
+    description: "Vista di staging contenenti le categorie dei prodotti."
+    columns:
+      - name: id_categoria
+        description: "Identificativo univoco della categoria"
+        
+      - name: nome_categoria
+        description: "nome principale (es. Elettronica, Audio & Video, Smart Home)"
+
+      - name: descrizione
+        description: "breve descrizione"   
+
+      - name: id_categoria_padre
+        description: "per gestire gerarchie (es. Audio & Video appartiene alla categoria padre Elettronica)"

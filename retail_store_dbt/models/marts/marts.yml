@@ -1,0 +1,47 @@
+version: 2
+
+models:
+  - name: dim_clienti
+    description: "Tabella dimensionale dei clienti e-commerce."
+    columns:
+      - name: id_cliente
+        description: "Chiave primaria della dimensione clienti."
+        tests:
+          - unique
+          - not_null
+
+  - name: dim_prodotti
+    description: "Tabella dimensionale dei prodotti con categorie associate."
+    columns:
+      - name: id_prodotto
+        description: "Chiave primaria della dimensione prodotti."
+        tests:
+          - unique
+          - not_null
+
+  - name: fct_ordini
+    description: "Tabella dei fatti transazionale degli ordini e-commerce."
+    columns:
+      - name: id_dettaglio
+        description: "Chiave primaria della tabella dei fatti."
+        tests:
+          - unique
+          - not_null
+
+      - name: id_cliente
+        description: "Chiave esterna verso dim_clienti."
+        tests:
+          - not_null
+          - relationships:
+              arguments:
+                to: ref('dim_clienti')
+                field: id_cliente
+
+      - name: id_prodotto
+        description: "Chiave esterna verso dim_prodotti."
+        tests:
+          - not_null
+          - relationships:
+              arguments:
+                to: ref('dim_prodotti')
+                field: id_prodotto
